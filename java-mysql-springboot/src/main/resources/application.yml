@@ -16,7 +16,13 @@ spring:
       max-wait: 60000
       time-between-eviction-runs-millis: 60000
       min-evictable-idle-time-millis: 300000
+      max-evictable-idle-time-millis: 900000
+      validation-query: SELECT 1
+      test-while-idle: true
+      filter:
+        stat:
+          db-type: mysql
+
 
 logging:
-  level:
-    org.springframework: INFO
+  level: { org.springframework: INFO , org.springframework.web: DEBUG}

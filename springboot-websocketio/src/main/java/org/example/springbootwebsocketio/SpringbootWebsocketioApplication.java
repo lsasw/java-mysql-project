@@ -1,0 +1,15 @@
+package org.example.springbootwebsocketio;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+@SpringBootApplication
+@EnableAsync
+public class SpringbootWebsocketioApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootWebsocketioApplication.class, args);
+    }
+
+}
